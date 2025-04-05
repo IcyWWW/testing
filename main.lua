@@ -91,6 +91,9 @@ local Slider = MainTab:CreateSlider({
    end,
 })
 
+local MiscTab = Window:CreateTab("Miscs", nil) -- Title, Image
+local Section = MiscsTab:CreateSection("Miscs")
+
 if IY_LOADED and not _G.IY_DEBUG == true then
     -- error("Infinite Yield is already running!", 0)
     return
